@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+
+#wrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+
+#header {
+	width: 960px;
+	height: 100px;
+	float: left;
+}
+
+#content {
+	width: 960px;
+	float: left;
+}
+
+#content #left-col {
+	width: 600px;
+	float: left;
+	position: relative;
+	padding-right: 30px;
+}
+
+#content #right-colv{
+	width: 330px;
+	margin-top: 20px;
+	float: left;
+	position: relative;
+}
+
+#content #right-col #sidebar {
+	width: 330px;
+	float: left;
+	position: relative;
+}
+
+#footer {
+	width: 100%;
+	float: left;
+	background: url(image/footer-bg.png) repeat-x top left;
+	height: 23px;
+	padding-top: 40px;
+	color: #fff;
+}
+
+#header #menu {
+	float: left;
+	width: 500px;
+	margin-top: 38px;
+}
+
+#header #menu ul {
+	width: 500px;
+	list-style: none;
+	float: right;
+	text-align: right;
+}
+
+#header #menu ul li.page_item { /* page_item is wordpress default class for page list */
+	float: right;
+}
+
+#header #menu ul li.page_item a {
+	padding: 4px 8px;
+	display: block;
+	margin: 0 7px 0 0;
+	float: left;
+	text-decoration: none;
+	font: 900 14px Arial, Helvetica, sans-serif;
+	color #a9bf78;
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-topright: 2px;
+}
+
+#header #menu ul li.page_item a:hover {
+	color: #fff;
+}
+
+#header #menu ul li.current_page_item a {
+	color: #fff;
+	background-color: #2c4106;
+}
+
+#sidebar ul {
+	list-style: none;
+}
+
+#sidebar1 {
+	float: left;
+	width: 160px;
+	padding-right: 10px;
+}
+
+#sidebar2 {
+	float: left;
+	width: 160px;
+}
+
+#sidebar ul {
+}
+
+#sidebar ul li {
+	float: left;
+	width: 158px;
+	background-color: #d7d39a;
+	border: 1px solid #bbb875;
+	margin-bottom: 10px;
+}
+
+#sidebar ul li h2 { /* this is the widget title */
+	padding: 3px 4px 6px;
+	font: 400 18px Arial, Helvetica, sans-serif;
+	color: #4c6b0d;
+}
+
+#sidebar ul li ul {
+}
+
+#sidebar ul li ul li { /* begin for the widget list */
+	float: left;
+	width: 158px;
+	border: 0;
+	margin-bottom: 0;
+}
+
+#sidebar ul li ul li a {
+	border-top: 1px solid #bbb875;
+	float: left;
+	width: 150px;
+	text-decoration: none;
+	color: #5d5b35;
+	padding: 2px 4px;
+}
+
+#sidebar ul li ul li a:hover {
+	color: #fff;
+	background-color: #bbb875;
+}
+
+#comments {
+	margin-top: 15px;
+	float: left;
+	width: 600px;
+}
+
+h3#comment-title {
+	background: url(images/comments.png) no-repeat top left;
+	width: 600px;
+	float: left;
+	text-indent: -9999em;
+	padding-top: 5px;
+}
+
+#comments ol, #comments ol li {
+	float: left;
+	width: 600px;
+	list-style: none;
+	padding: 0;
+}
+
+#comments ol li .comment-data {
+	float: left;
+	width: 478px;
+	margin-right: 10px;
+	background-color: #d7d39a;
+	padding: 5px 10px;
+	min-height: 120px;
+	_height: 120px; /* an IE6 hack */
+	overflow: auto;
+	border: 1px solid #c1bd85;
+}
+
+#comments ol li.alt .comment-data {
+	float: left;
+	width: 478px;
+	margin-right: 10px;
+	background-color: #eae8c6;
+	padding: 5px 10px;
+	min-height: 120px;
+	border: 1px solid #c1bd85;
+	_height: 120px;
+	overflow: visible;
+	margin-top: -1px;
+	margin-bottom: -2px;
+}
+
+#comments ol li .comment-info {
+	width: 90px;
+	float: left;
+	text-align: right;
+	font-size: 10px;
+	line-height: 12px;
+}
+
+#comments ol li .comment-info a img {
+	border: 0;
+	margin-bottom: 5px;
+}
+
+#comments ol li .comment-info a {
+	text-decoration: none;
+}

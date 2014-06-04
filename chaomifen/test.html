@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-1.5.min.js"></script>
+<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.10.custom.css" rel="stylesheet" />	
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.10.custom.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+$("button").click(function(){
+$("p").hide();
+});
+});
+</script>
+</head>
+<style>
+#feedback { font-size: 1.4em; }
+#selectable .ui-selecting { background: #FECA40; }
+#selectable .ui-selected { background: #F39814; color: white; }
+#selectable { list-style-type: none; margin: 0; padding: 0; }
+#selectable li { margin: 3px; padding: 1px; float: left; width: 100px; height: 80px; font-size: 4em; text-align: center; }
+</style>
+<script>
+$(function() {
+	$( "#selectable" ).selectable();
+	$( '#date' ).datepicker();
+});
+</script>
+
+
+<ol id="selectable">
+	<li class="ui-state-default">1</li>
+	<li class="ui-state-default">2</li>
+	<li class="ui-state-default">3</li>
+	<li class="ui-state-default">4</li>
+	<li class="ui-state-default">5</li>
+	<li class="ui-state-default">6</li>
+	<li class="ui-state-default">7</li>
+	<li class="ui-state-default">8</li>
+	<li class="ui-state-default">9</li>
+	<li class="ui-state-default">10</li>
+	<li class="ui-state-default">11</li>
+	<li class="ui-state-default">12</li>
+</ol>
+
+
+<input id="date" type="text" name="date" />
+
+
+<body>
+    <h2>this is a heading</h2>
+    <p>this is a paragraph</p>
+    <p>this is another one</p>
+    <button type="button">click me</button>
+</body>
+</html>
+
